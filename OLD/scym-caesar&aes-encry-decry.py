@@ -37,6 +37,8 @@ aes_ciphertext = aes_encryptor.update(bytes(plaintext, 'utf-8')) + aes_encryptor
 # Note the output is a string of bytes
 print(f"Encrypted AES ciphertext: {aes_ciphertext}")
 
+'''---------------------------------------------------------'''
+
 # Similar setup of AES to what we did for encryption, but this time, for decryption
 receiver_aes_cipher = Cipher(algorithms.AES(bytes(aes_key, 'utf-8')), modes.CBC(bytes(aes_initialization_vector, 'utf-8')))
 aes_decryptor = receiver_aes_cipher.decryptor()
