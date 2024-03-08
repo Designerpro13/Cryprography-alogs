@@ -1,0 +1,14 @@
+1.cryptography
+->hazmat.primitives.ciphers 
+->Cipher, algorithms, modes
+
+2.functools
+->reduce
+
+3.String
+->ascii.letters,ascii.digits,acsii.puntuations 
+or
+->printable
+
+4.Random
+->Choice
